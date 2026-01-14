@@ -1,1 +1,47 @@
-<script src="requests.js"> </script>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Coast Dairies Wind</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="card">
+    <header>
+      <h1>Coast Dairies Wind</h1>
+      <div class="sub" id="status">Loading…</div>
+    </header>
+
+    <section class="compass-wrap" aria-label="Wind direction compass">
+      <div class="compass" role="img" aria-label="Compass">
+        <div class="tick n">N</div>
+        <div class="tick e">E</div>
+        <div class="tick s">S</div>
+        <div class="tick w">W</div>
+
+        <!-- Needle rotates to degrees -->
+        <div class="needle" id="needle" aria-hidden="true"></div>
+        <div class="hub" aria-hidden="true"></div>
+      </div>
+
+      <div class="readout">
+        <div class="row">
+          <span class="label">Direction</span>
+          <span class="value" id="dirText">—</span>
+        </div>
+        <div class="row">
+          <span class="label">Speed</span>
+          <span class="value" id="speedText">—</span>
+        </div>
+        <div class="row">
+          <span class="label">Observed</span>
+          <span class="value" id="timeText">—</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
